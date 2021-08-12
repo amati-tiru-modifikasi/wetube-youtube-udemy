@@ -1,9 +1,13 @@
 import React from 'react'
 
-export default function Video() {
+const Video = (props) => {
     return (
         <div>
-            Video
+            <h1>{props.title}</h1>
+            <h3>{props.dateAdded}</h3>
+            <h3>{props.chanel}</h3>
         </div>
     )
 }
+
+export default Video
